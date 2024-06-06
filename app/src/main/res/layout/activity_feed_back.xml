@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.FeedBackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@id/iv_back"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_back_black2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="意见反馈"
+                android:textColor="@color/black_141414"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+        <EditText
+            android:id="@+id/etInputContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/shape_feedback_edit_bg"
+            android:gravity="top"
+            android:hint="请在这里填写您遇到的问题或意见建议， 我们会努力做的更好！！"
+            android:minHeight="93dp"
+            android:paddingStart="20dp"
+            android:paddingTop="13dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/black_141414"
+            android:textColorHint="#4d858585"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:text="联系方式"
+            android:textColor="@color/black_141414"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <net.csdn.roundview.RoundButton
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:tag="binding_1"
+            android:text="提交反馈"
+            android:textColor="@color/white"
+            android:background="@color/color_14b2b1"
+            app:rRadius="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5.0dip"
+                android:text="学号："
+                android:textColor="@color/black_141414"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5.0dip"
+                android:text="\ 202103151203"
+                android:textColor="@color/black_141414"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_wx_fz"
+                android:layout_width="50dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="15.0dip"
+                android:background="@drawable/shape_copy"
+                android:gravity="center"
+                android:tag="binding_2"
+                android:text="复制"
+                android:textColor="#ff1a1a1a"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25.0dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5.0dip"
+                android:text="我的QQ："
+                android:textColor="@color/black_141414"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5.0dip"
+                android:text="\ 167774861"
+                android:textColor="@color/black_141414"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_qq_fz"
+                android:layout_width="50dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="15.0dip"
+                android:background="@drawable/shape_copy"
+                android:gravity="center"
+                android:tag="binding_3"
+                android:text="复制"
+                android:textColor="#ff1a1a1a"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jieri"
+    android:layout_width="match_parent"
+    android:layout_height="156dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+
+    <net.csdn.roundview.RoundConstraintLayout
+        android:layout_width="0.0dip"
+        android:layout_height="156dp"
+        android:layout_weight="1.0"
+        app:rRadius="8dp"
+        app:rStrokeColor="@color/gray_f5f7f7"
+        app:rStrokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/tv_festival_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="儿童节"
+            android:textColor="#FF333333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/etj"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius="8dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0.0dip"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="9dp"
+            android:background="#ffd8d8d8"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_festival_title" />
+
+        <TextView
+            android:id="@+id/tv_national_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="13dp"
+            android:text="6月1日"
+            android:textColor="#66333333"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:tag="binding_4"
+            android:text="Children's Day"
+            android:textColor="#66333333"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_national_day"
+            app:layout_constraintStart_toStartOf="parent" />
+    </net.csdn.roundview.RoundConstraintLayout>
+
+    <net.csdn.roundview.RoundConstraintLayout
+        android:layout_width="0.0dip"
+        android:layout_height="156dp"
+        android:layout_marginStart="11dp"
+        android:layout_weight="1.0"
+        android:tag="binding_5"
+        app:rRadius="8dp"
+        app:rStrokeColor="@color/gray_f5f7f7"
+        app:rStrokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/tv_festival_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="27dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:text="童年只有一次，成长不会再来，很荣幸参与你的童年见证。"
+            android:maxLines="5"
+            android:tag="binding_6"
+            android:textColor="#FF333333"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/icon_festival_dot"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <include
+            android:id="@+id/include_festival_copy"
+            layout="@layout/layout_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </net.csdn.roundview.RoundConstraintLayout>
+</LinearLayout>

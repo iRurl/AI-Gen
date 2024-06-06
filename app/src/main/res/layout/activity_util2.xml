@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:context=".activity.util_2_Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="词库默认全部开启，点击可取消对该词库的检测"
+        android:textColor="@color/textgreycolor"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <TextView android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="170dp"
+            android:background="@drawable/login_form_bg"
+            android:drawableLeft="@drawable/point"
+            android:text="敏感词"
+            android:drawablePadding="20dp"
+            android:textColor="@color/textgreycolor"
+            android:textSize="13sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="70dp"
+            />
+
+        <TextView android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="170dp"
+            android:background="@drawable/login_form_bg"
+            android:drawableLeft="@drawable/point"
+            android:text="美妆违禁词"
+            android:drawablePadding="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/textgreycolor"
+            android:textSize="13sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="40dp"
+            />
+        <TextView android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="170dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_form_bg"
+            android:drawableLeft="@drawable/point"
+            android:text="新闻违禁词"
+            android:drawablePadding="20dp"
+            android:textColor="@color/textgreycolor"
+            android:textSize="13sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="40dp"
+            />
+
+        <TextView android:layout_row="1"
+            android:layout_column="1"
+            android:layout_width="170dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_form_bg"
+            android:drawableLeft="@drawable/point"
+            android:text="通用违禁词"
+            android:drawablePadding="20dp"
+            android:textColor="@color/textgreycolor"
+            android:textSize="13sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="40dp"
+            />
+    </GridLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="300dp"
+        android:paddingTop="10dp"
+        android:gravity="top"
+        android:hint="请输入您需要检测的文案内容"
+        android:background="@color/white"
+        android:textSize="15sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="粘贴内容"
+            android:background="@drawable/login_form_bg"
+            android:textColor="@color/textgreycolor"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:text="立即检测"
+            android:background="@drawable/login_form_bg"
+            android:backgroundTint="@color/color_14b2b1"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

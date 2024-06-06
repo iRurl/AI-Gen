@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读写文件权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AIGen"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DiaryPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CommunityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EmptyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.util_3_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.util_2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.util_1_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AiUtil_comActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.wahj_listActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VideoPalyerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activity.RegisteredActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ServiceAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ServiceViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BannerView"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Item_Detail_type1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Item_Detail_type2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Item_Detail_type3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true" />
+
+        <service android:name=".manager.MusicService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ai.ai_gen.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

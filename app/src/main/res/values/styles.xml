@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Normal tab text appearance -->
+    <style name="NormalTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textgreycolor</item>
+    </style>
+
+    <!-- Selected tab text appearance -->
+    <style name="SelectedTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textblackcolor</item>
+    </style>
+</resources>
